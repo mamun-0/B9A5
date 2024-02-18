@@ -1,7 +1,10 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-
+/* Common */
+.bg_light_gray {
+  background: rgb(247, 248, 248);
+}
 /* Navbar */
 .nav-button {
   border: 1px solid rgba(29, 209, 0, 0.4);
@@ -27,4 +30,28 @@
   border-bottom: 3px solid rgb(29, 209, 0);
   border-radius: 24px;
   background: rgb(255, 255, 255);
+}
+/* ph_paribahan */
+.ph_paribahan {
+  margin-top: 20vh;
+}
+.seat_left {
+  border-radius: 12px;
+  padding: 15px;
+  background: rgba(29, 209, 0, 0.15);
+}
+.inermediate_route {
+  border-radius: 12px;
+  background: rgba(3, 7, 18, 0.05);
+}
+.dashed_border {
+  border-bottom: 1px dashed rgba(3, 7, 18, 0.2);
+}
+.bus_logo {
+  width: auto;
+  height: 40px;
+}
+.dotted {
+  width: 2px;
+  border: 2px dashed rgb(29, 209, 0);
 }
