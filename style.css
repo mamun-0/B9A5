@@ -1,3 +1,9 @@
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Navbar */
+.nav-button {
+  border: 1px solid rgba(29, 209, 0, 0.4);
+  background: rgba(29, 209, 0, 0.1);
 }
