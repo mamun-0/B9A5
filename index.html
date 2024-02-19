@@ -21,8 +21,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
+    <script defer src="./modal.js"></script>
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      id="myModal"
+      class="modal hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <!-- Modal content -->
+      <div class="modal-content bg-white w-1/2 p-4">
+        <span
+          id="closeModalButton"
+          class="close absolute top-0 right-0 cursor-pointer p-4"
+          >&times;</span
+        >
+        <div class="flex flex-col justify-center items-center p-6">
+          <div>
+            <img src="./images/success.png" alt="" />
+          </div>
+          <p class="text-2xl my-4">SUCCESS</p>
+          <p class="my-4 text-center text-2xl font-bold">
+            Thank you for Booking Our Bus Seats. We are working hard to find the
+            best service and deals for you.
+          </p>
+          <p class="text-center text-lg">
+            Shortly you will find a confirmation in your email.
+          </p>
+          <a
+            href=""
+            class="flex justify-center items-center text-white text-2xl font-bold rounded-xl w-72 h-12 bg-green-600 text-white my-4"
+          >
+            Continue
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
     <div class="px-5">
       <nav class="my-5">
         <header class="flex justify-between items-center">
@@ -336,6 +371,7 @@
               />
             </div>
             <button
+              id="openModalButton"
               class="w-full p-3 bg-green font-bold text-white rounded-xl text-lg mt-3 disable_button btn_next"
             >
               Next
