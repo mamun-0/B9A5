@@ -11,6 +11,8 @@ const apply_btn = document.querySelector(".apply_btn");
 const copupon_inputUI = document.querySelector(".copupon_input");
 const apply_btn_container = document.querySelector(".apply_btn_container");
 const dynamic_seat = document.getElementById("dynamic_seat");
+const phone_number = document.getElementById("phone");
+const btn_next = document.querySelector(".btn_next");
 
 let initialAvailableSeat = 8;
 let initialBookedSeat = 0;
@@ -84,14 +86,15 @@ function createUI(targetElement, seat_number = "Standing") {
   div.append(p3);
   targetElement.append(div);
 }
-/*
-<div class="flex justify-between font-bold font-normal p-3">
-              <p>A1</p>
-              <p>Economoy</p>
-              <p>550</p>
-            </div>
-*/
-
+phone_number.addEventListener("input", function (evt) {
+  console.log(evt.target.value);
+  if (evt.target.value) {
+    btn_next.classList.remove("disable_button");
+    btn_next.classList.add("active_button");
+  } else {
+    btn_next.classList.add("disable_button");
+  }
+});
 function totaCalculation(tickets) {
   return 550 * tickets;
 }

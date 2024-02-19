@@ -249,11 +249,46 @@
             <p>Grand Total</p>
             <p>BDT <span class="grand_total">0</span></p>
           </div>
-          <button
-            class="w-full p-3 bg-green font-bold text-white rounded-xl text-lg mt-3"
-          >
-            Next
-          </button>
+          <form action="#" class="my-3">
+            <div>
+              <div>
+                <label class="text-lg" for="name">Passenger Name *</label>
+              </div>
+              <input
+                type="text"
+                required
+                placeholder="name"
+                id="name"
+                class="w-full p-3 border rounded-md"
+              />
+            </div>
+            <div class="my-2">
+              <div>
+                <label class="text-lg" for="phone">Phone Number *</label>
+              </div>
+              <input
+                type="number"
+                required
+                placeholder="phone"
+                id="phone"
+                class="w-full p-3 border rounded-md phone"
+              />
+            </div>
+            <div>
+              <div><label class="text-lg" for="email">Email ID</label></div>
+              <input
+                type="email"
+                id="email"
+                placeholder="email"
+                class="w-full p-3 border rounded-md"
+              />
+            </div>
+            <button
+              class="w-full p-3 bg-green font-bold text-white rounded-xl text-lg mt-3 disable_button btn_next"
+            >
+              Next
+            </button>
+          </form>
         </div>
       </section>
     </div>
