@@ -8,6 +8,9 @@ body {
 .bg_light_gray {
   background: rgb(247, 248, 248);
 }
+.bg_pink {
+  background: rgb(247, 140, 156);
+}
 .border {
   border: 1px solid navy;
 }
