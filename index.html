@@ -20,6 +20,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <div class="px-5">
@@ -122,7 +123,9 @@
               </div>
               <div class="flex seat_left">
                 <img src="./images/seat_green.png" alt="" />
-                <p class="text-green-500">40 Seats left</p>
+                <p class="text-green-500">
+                  <span class="availableSeat mx-1">8</span>Seats left
+                </p>
               </div>
             </div>
             <div class="bg_light_gray p-3">
@@ -174,7 +177,7 @@
             </div>
           </div>
           <!-- seats -->
-          <div class="my-3 font-inter">
+          <div class="my-3 font-inter seats_container">
             <div class="flex justify-between mb-2">
               <div>
                 <button class="rounded-xl seat">A1</button>
@@ -187,12 +190,12 @@
             </div>
             <div class="flex justify-between">
               <div>
-                <button class="rounded-xl seat">A1</button>
-                <button class="rounded-xl seat ml-2">A2</button>
+                <button class="rounded-xl seat">B1</button>
+                <button class="rounded-xl seat ml-2">B2</button>
               </div>
               <div>
-                <button class="rounded-xl seat">A3</button>
-                <button class="rounded-xl seat ml-2">A4</button>
+                <button class="rounded-xl seat">B3</button>
+                <button class="rounded-xl seat ml-2">B4</button>
               </div>
             </div>
           </div>
@@ -206,7 +209,7 @@
             <div class="flex justify-between font-bold dotted_gray_single p-3">
               <div class="flex justify-center items-center">
                 <p>Seat</p>
-                <div class="batch ml-1">12</div>
+                <div class="batch ml-1 bookedSeat">0</div>
               </div>
               <p>Class</p>
               <p>Price</p>
