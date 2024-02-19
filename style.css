@@ -89,9 +89,7 @@ body {
   background: rgba(3, 7, 18, 0.05);
 }
 .batch {
-  position: relative;
   color: white;
-  bottom: 5px;
   padding: 3px;
   border-radius: 5px;
   background: rgb(29, 209, 0);
@@ -117,4 +115,18 @@ body {
 }
 .seat_book {
   background-color: rgb(29, 209, 0);
+  color: white;
+}
+.active_button {
+  color: white;
+  background: rgb(29, 209, 0);
+}
+.disable_button {
+  color: rgb(253, 245, 245);
+  cursor: not-allowed;
+  background-color: rgb(143, 138, 138);
+  border: 1px solid rgb(241, 11, 11);
+}
+.d-none {
+  display: none;
 }
