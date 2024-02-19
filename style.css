@@ -103,3 +103,16 @@ body {
 .boundary {
   border: 1px dashed rgba(3, 7, 18, 0.3);
 }
+/* Footer */
+.bg_footer {
+  background: rgb(3, 7, 18);
+}
+.footer_dotted {
+  border: 1.5px dashed rgba(255, 255, 255, 0.3);
+}
+.footer_height {
+  height: 60vh;
+}
+.footer_border {
+  border: 2px solid white;
+}
