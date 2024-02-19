@@ -13,6 +13,8 @@ const apply_btn_container = document.querySelector(".apply_btn_container");
 const dynamic_seat = document.getElementById("dynamic_seat");
 const phone_number = document.getElementById("phone");
 const btn_next = document.querySelector(".btn_next");
+const discount = document.querySelector(".discount");
+const discount_parent = document.querySelector(".discount_parent");
 
 let initialAvailableSeat = 8;
 let initialBookedSeat = 0;
@@ -51,14 +53,18 @@ apply_btn.addEventListener("click", function () {
     return;
   }
   if (value === "NEW15") {
+    discount.innerText = total * 0.15;
     grandTotal = grandTotal - grandTotal * 0.15;
     grandTotalUI.innerText = grandTotal;
     apply_btn_container.classList.add("d-none");
+    discount_parent.classList.remove("hidden");
     return;
   } else if (value === "Couple 20") {
+    discount.innerText = total * 0.2;
     grandTotal = grandTotal - grandTotal * 0.2;
     grandTotalUI.innerText = grandTotal;
     apply_btn_container.classList.add("d-none");
+    discount_parent.classList.remove("hidden");
     return;
   }
   alert("Invalid coupon code!");
@@ -87,7 +93,6 @@ function createUI(targetElement, seat_number = "Standing") {
   targetElement.append(div);
 }
 phone_number.addEventListener("input", function (evt) {
-  console.log(evt.target.value);
   if (evt.target.value) {
     btn_next.classList.remove("disable_button");
     btn_next.classList.add("active_button");
