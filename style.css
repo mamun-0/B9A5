@@ -5,6 +5,9 @@
 .bg_light_gray {
   background: rgb(247, 248, 248);
 }
+.bg-green {
+  background: rgb(29, 209, 0);
+}
 /* Navbar */
 .nav-button {
   border: 1px solid rgba(29, 209, 0, 0.4);
@@ -32,6 +35,10 @@
   background: rgb(255, 255, 255);
 }
 /* ph_paribahan */
+.section_border_curve {
+  border-top: 3px solid rgb(29, 209, 0);
+  border-radius: 24px;
+}
 .ph_paribahan {
   margin-top: 20vh;
 }
@@ -54,4 +61,41 @@
 .dotted {
   width: 2px;
   border: 2px dashed rgb(29, 209, 0);
+}
+.dotted_gray {
+  border-top: 1px dashed rgba(3, 7, 18, 0.2);
+  border-bottom: 1px dashed rgba(3, 7, 18, 0.2);
+}
+.dotted_gray_single {
+  border-bottom: 1px dashed rgba(3, 7, 18, 0.2);
+}
+.dotted_gray_single_top {
+  border-top: 1px solid rgba(3, 7, 18, 0.2);
+}
+.seat {
+  width: 110px;
+  height: 56px;
+  background: rgb(247, 248, 248);
+  transition: all 0.3s;
+}
+.seat:hover {
+  border: 1px solid rgb(29, 209, 0);
+  background: rgba(3, 7, 18, 0.1);
+}
+.bg_seat_details_area {
+  background: rgba(3, 7, 18, 0.05);
+}
+.batch {
+  position: relative;
+  color: white;
+  bottom: 5px;
+  padding: 3px;
+  border-radius: 5px;
+  background: rgb(29, 209, 0);
+}
+.apply_btn {
+  right: 0;
+}
+.boundary {
+  border: 1px dashed rgba(3, 7, 18, 0.3);
 }
